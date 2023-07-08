@@ -14,14 +14,7 @@ class ProductRepository {
     )
 
     fun findAll(): List<Product>{
-        sleep(1000)
         return products
-    }
-
-    fun sleep(time: Long){
-        Thread.sleep(
-            time
-        )
     }
 
     fun save(product: Product) {

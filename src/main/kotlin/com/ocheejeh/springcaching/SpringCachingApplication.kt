@@ -2,10 +2,12 @@ package com.ocheejeh.springcaching
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
+import org.springframework.cache.annotation.EnableCaching
 
 @SpringBootApplication
-class SpringcachingApplication
+@EnableCaching
+class SpringCachingApplication
 
 fun main(args: Array<String>) {
-	runApplication<SpringcachingApplication>(*args)
+	runApplication<SpringCachingApplication>(*args)
 }
